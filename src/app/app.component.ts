@@ -12,7 +12,7 @@ export class AppComponent {
   nombre = 'Guido'
 
   constructor() {
-    setInterval( ()=> this.nombre += ' Maiola' ,3000);
+    setInterval( ()=> this.nombre = 'Guido Maiola' ,5000);
   }
 
   getSuma(n1: number, n2: number) {

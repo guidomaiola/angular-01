@@ -10,9 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   nombre = 'Guido'
-  textoPlaceHolder = 'Escriba algo aquí'
+  textPlaceHolder = 'Write something here'
   disabled = true;
   imgSrc = 'https://img.freepik.com/vector-gratis/ilustracion-icono-galeria_53876-27002.jpg'
+  text = 'This is a video about Event Binding'
 
   constructor() {
     setInterval( ()=> this.nombre = 'Guido Maiola' ,5000);
@@ -21,6 +22,10 @@ export class AppComponent {
 
   getSuma(n1: number, n2: number) {
     return n1 + n2
+  }
+
+  updateText(): void {
+    this.text = 'On the next video, we will see two-way data binding'
   }
   
 }

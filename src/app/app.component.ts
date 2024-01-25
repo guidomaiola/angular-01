@@ -9,5 +9,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-01';
+  nombre = 'Guido'
+
+  constructor() {
+    setInterval( ()=> this.nombre += ' Maiola' ,3000);
+  }
+
+  getSuma(n1: number, n2: number) {
+    return n1 + n2
+  }
+  
 }

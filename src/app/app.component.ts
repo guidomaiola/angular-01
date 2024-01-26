@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  text = '';
+
+  studentsList: any[] = [
+    {name: 'Guido Maiola', status: 'Registered'},
+    {name: 'John Doe', status: 'Regular'},
+    {name: 'Joe Smith', status: 'Regular'},
+    {name: 'Adam White', status: 'Registered'}]
 }

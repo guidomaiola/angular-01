@@ -3,7 +3,7 @@
         <h3>Listado de estudiantes</h3>
     </div>
     <br>
-    <table class="table">
+    <table class="table" *ngIf="studentsList.length > 0">
         <thead>
             <th>ID</th>
             <th>Name</th>
@@ -11,12 +11,13 @@
         </thead>
         <tbody>
             <tr *ngFor="let student of studentsList; let i = index">
-                <td>{{ i }}</td>
+                <td>{{ i + 1}}</td>
                 <td>{{ student.name }}</td>
                 <td>{{ student.status }}</td>
             </tr>
             
         </tbody>
     </table>
+    <h3 *ngIf="studentsList.length === 0">There are no records to show</h3>
 
 </div>

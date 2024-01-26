@@ -11,5 +11,14 @@ export class AppComponent {
     {name: 'Guido Maiola', status: 'Registered'},
     {name: 'John Doe', status: 'Regular'},
     {name: 'Joe Smith', status: 'Regular'},
-    {name: 'Adam White', status: 'Registered'}]
+    {name: 'Adam White', status: 'Registered'}
+  ]
+
+
+  mostrar = true;
+
+  toggle(): void {
+    this.mostrar = !this.mostrar
 }
+}
+

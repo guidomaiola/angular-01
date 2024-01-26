@@ -15,10 +15,5 @@ export class AppComponent {
   ]
 
 
-  mostrar = true;
-
-  toggle(): void {
-    this.mostrar = !this.mostrar
-}
 }
 

@@ -13,7 +13,10 @@
             <tr *ngFor="let student of studentsList; let i = index">
                 <td>{{ i + 1}}</td>
                 <td>{{ student.name }}</td>
-                <td [ngStyle]="{ 'font-style': student.status === 'Registered' ? 'italic' : 'normal'}">{{ student.status }}</td>
+                <td>
+                    <span [ngClass]="student.status === 'Registered' ? 'badge text-bg-success' : 'badge text-bg-secondary'"> 
+                        {{ student.status }} </span>
+                </td>
             </tr>
             
         </tbody>

@@ -11,7 +11,8 @@ export class AppComponent {
     {name: 'Guido Maiola', status: 'Registered'},
     {name: 'John Doe', status: 'Regular'},
     {name: 'Joe Smith', status: 'Regular'},
-    {name: 'Adam White', status: 'Registered'}
+    {name: 'Adam White', status: 'Registered'},
+    {name: 'Nick Johnson', status: 'Suspended'}
   ]
 
 

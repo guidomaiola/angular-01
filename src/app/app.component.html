@@ -10,12 +10,19 @@
             <th>Status</th>
         </thead>
         <tbody>
-            <tr *ngFor="let student of studentsList; let i = index">
+            <tr *ngFor="let student of studentsList; let i = index" [ngSwitch]="student.status">
                 <td>{{ i + 1}}</td>
                 <td>{{ student.name }}</td>
                 <td>
-                    <span [ngClass]="student.status === 'Registered' ? 'badge text-bg-success' : 'badge text-bg-secondary'"> 
-                        {{ student.status }} </span>
+                    <span *ngSwitchCase="'Registered'" class="badge text-bg-primary"> 
+                        {{ student.status }} 
+                    </span>
+                    <span *ngSwitchCase="'Regular'" class="badge text-bg-success"> 
+                        {{ student.status }} 
+                    </span>
+                    <span *ngSwitchCase="'Suspended'" class="badge text-bg-danger"> 
+                        {{ student.status }} 
+                    </span>
                 </td>
             </tr>
             
